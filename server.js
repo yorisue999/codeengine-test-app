@@ -2,6 +2,7 @@ const http = require('http');
 
 http.createServer(function (request, response) {
    
+   console.log("codeengine-yoti-test-webapp");
    console.log(request.header);
    console.log(request.body);
    
