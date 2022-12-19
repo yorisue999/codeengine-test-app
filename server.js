@@ -3,10 +3,10 @@ const http = require('http');
 http.createServer(function (request, response) {
    
    console.log('== codeengine-yoti-test-webapp Ver 1.0.2 ==');
-//   console.log('@method=' + request.method());
-//   console.log('@path=' + request.path());
-//   console.log('@header=' + request.getHeaders());
-   console.log('@request=' + request);
+   console.log('@method=' + request.method);
+   console.log('@path=' + request.path);
+   console.log('@headers=' + request.headers);
+   console.log('@form=' + request.form);
    
    target = process.env.TARGET ? process.env.TARGET : 'World' ;
    msg = process.env.MSG ? process.env.MSG : 'Hello ' + target + '\n';
